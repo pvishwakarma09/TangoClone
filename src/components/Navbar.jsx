@@ -129,7 +129,7 @@ const Navbar = () => {
           </svg>
         </Link>
         <button className="circular-toggle">
-          <img src="src/assets/mode.png" alt="mode-iamge" />
+          <img src="./src/assets/mode.png" alt="mode-iamge" />
         </button>
         <button className="signin-button">
           <svg
