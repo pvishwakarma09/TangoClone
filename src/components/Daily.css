@@ -1,9 +1,18 @@
-
-h1{
-    margin: 2rem 9rem 0px;
-    color: #fff;
-    font-size: x-large;
-    font-weight: bolder;
+h1 {
+  margin: 2rem 9rem 0px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.card-sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0px;
+  margin-left: 20px;
+  font-weight: bolder;
+  color: #fff;
+  font-family: Lato, sans-serif;
 }
 
 .main-section {
@@ -18,7 +27,7 @@ h1{
   flex: 1 1 calc(25% - 10px); /* Four cards per row, accounting for gap */
   box-sizing: border-box;
   height: 60vh; /* Set a fixed height, adjust as needed */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: #252525;
@@ -40,13 +49,13 @@ h1{
 }
 
 @media (max-width: 600px) {
-    .main-section{
-         margin: 8px 2rem; 
-    }
-    h1{
-        margin: 1rem 5rem 0px;
-        margin-bottom: 10px;
-    }
+  .main-section {
+    margin: 8px 2rem;
+  }
+  h1 {
+    margin: 1rem 5rem 0px;
+    margin-bottom: 10px;
+  }
   .first-card {
     flex: 1 1 100%; /* One card per row */
   }
