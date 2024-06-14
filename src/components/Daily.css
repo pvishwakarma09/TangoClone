@@ -1,0 +1,53 @@
+
+h1{
+    margin: 2rem 9rem 0px;
+    color: #fff;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* Adjust the gap between cards as needed */
+  margin: 8px 9rem;
+  scroll-snap-type: y mandatory;
+}
+
+.first-card {
+  flex: 1 1 calc(25% - 10px); /* Four cards per row, accounting for gap */
+  box-sizing: border-box;
+  height: 60vh; /* Set a fixed height, adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+  border-radius: 15px; /* Example background color */
+  scroll-snap-align: start;
+}
+
+/* Optional: To handle responsiveness for smaller screens */
+@media (max-width: 1200px) {
+  .first-card {
+    flex: 1 1 calc(33.33% - 10px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .first-card {
+    flex: 1 1 calc(50% - 10px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+    .main-section{
+         margin: 8px 2rem; 
+    }
+    h1{
+        margin: 1rem 5rem 0px;
+        margin-bottom: 10px;
+    }
+  .first-card {
+    flex: 1 1 100%; /* One card per row */
+  }
+}
