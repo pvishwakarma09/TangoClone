@@ -1,16 +1,6 @@
 // src/Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaSearch,
-  FaUserCircle,
-  FaHome,
-  FaUserPlus,
-  FaThumbsUp,
-  FaCompass,
-  FaComments,
-  FaArrowRight,
-} from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
