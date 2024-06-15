@@ -1,6 +1,6 @@
 // src/Navbar.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";  // in react use link-to and html use anchor tag.
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
           ></img>
         </div>
       </div>
-      <div className="search-bar" style={{}}>
+      <div className="search-bar">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -136,7 +136,7 @@ const Navbar = () => {
               d="M21 25.75A3.75 3.75 0 0 0 24.75 22V10A3.75 3.75 0 0 0 21 6.25h-5a.75.75 0 0 0 0 1.5h5A2.25 2.25 0 0 1 23.25 10v12A2.25 2.25 0 0 1 21 24.25h-5a.75.75 0 0 0 0 1.5zM9.47 10.53a.75.75 0 1 1 1.06-1.06l6 6 .53.53-.528.528-.002.002-.002.002-5.998 5.998a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h10.19z"
               clip-rule="evenodd"
             ></path>
-          </svg>{" "}
+          </svg>
           Sign In
         </button>
       </div>
