@@ -119,7 +119,7 @@ const Navbar = () => {
           </svg>
         </Link>
         <button className="circular-toggle">
-          <img src="src/assets/catlogo.png" alt="Image" />
+          <img src="public/assets/catlogo.png" alt="Image" />
         </button>
         <button className="signin-button">
           <svg
