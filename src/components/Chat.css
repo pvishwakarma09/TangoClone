@@ -50,6 +50,14 @@
   );
   color: #fff;
 }
+.sign-btn:hover{
+  background: linear-gradient(
+    to bottom,
+    #fc3d6be6,
+    #fb4a73e6 51%,
+    #f73965e6 75%
+  );;
+}
 @media (max-width: 1200px) {
 }
 

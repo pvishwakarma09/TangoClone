@@ -3,8 +3,8 @@ import React from "react";
 import "./Daily.css";
 
 const MainSection = () => {
-  const videos = [];
-  // Generate 60 more video objects
+  const videos = []; // empty array
+  // Generate 100 more video objects
   for (let i = 1; i <= 100; i++) {
     videos.push({
       id: i,

@@ -16,19 +16,19 @@ const MainContent = () => {
 
   // Conditionally render based on the current path
   if (location.pathname === "/following") {
-    return <Following />;
+    return <Following />; // following component
   }
 
   if (location.pathname === "/chat") {
-    return <Chat />;
+    return <Chat />; // chat component
   }
 
   return (
     <>
       <Routes>
-        <Route path="/foryou" element={<div>For You Content</div>} />
-        <Route path="/explore" element={<div>Explore Content</div>} />
-        <Route path="/newpage" element={<div>New Page Content</div>} />
+        <Route path="/foryou" element={<div></div>} />
+        <Route path="/explore" element={<div></div>} />
+        <Route path="/newpage" element={<div></div>} />
       </Routes>
       <Daily />
     </>
