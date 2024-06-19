@@ -1,6 +1,6 @@
 // export default Card;
 import React from "react";
-import "./Daily.css";
+import "./Card.css";
 
 const MainSection = () => {
   const videos = []; // empty array

@@ -30,6 +30,8 @@ h2 {
   gap: 12px; /* Adjust the gap between cards as needed */
   margin: 8px 9rem;
   scroll-snap-type: y mandatory;
+  width:auto;
+  
 }
 
 .first-card {
