@@ -7,7 +7,25 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <button className="toggle-button">☰</button>
+        <button className="toggle-button">
+          <span className="toggle-button hamberg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="none"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M7.25 10A.75.75 0 0 1 8 9.25h16a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75m0 6a.75.75 0 0 1 .75-.75h16a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75M8 21.25a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </button>
+
         <div className="logo">
           <img
             src="https://tango.me/images/31fe8a5fe128339779c5-brand-logo.svg"
@@ -101,7 +119,7 @@ const Navbar = () => {
           <span>Chat</span>
         </Link>
       </div>
-      <div className="navbar-right">
+      <div className="navbar-right positions">
         <Link to="/newpage" className="nav-svg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
