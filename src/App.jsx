@@ -7,9 +7,10 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import Daily from "./components/Daily";
+import Card from "./components/Card";
 import Following from "./components/Following";
 import Chat from "./components/Chat";
+import Position from "./components/Position";
 
 const MainContent = () => {
   const location = useLocation();
@@ -23,14 +24,18 @@ const MainContent = () => {
     return <Chat />; // chat component
   }
 
+  // Render Position component exclusively for the /newpage route
+  if (location.pathname === "/newpage") {
+    return null; // MainContent does not render anything for /newpage
+  }
+
   return (
     <>
       <Routes>
         <Route path="/foryou" element={<div></div>} />
         <Route path="/explore" element={<div></div>} />
-        <Route path="/newpage" element={<div></div>} />
       </Routes>
-      <Daily />
+      <Card />
     </>
   );
 };
@@ -38,7 +43,11 @@ const MainContent = () => {
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <Navbar />\
+      <Routes>
+        <Route path="/newpage" element={<Position />} />
+        
+      </Routes>
       <MainContent />
     </Router>
   );

@@ -1,0 +1,42 @@
+.position-layout ul{
+  display: flex;
+  gap: 30px;
+  /* margin: 13px 0 0 40px; */
+  margin: 13px 40px;
+  border-bottom: 2px solid #656363;
+}
+.position-layout li{
+  list-style-type: none;
+}
+.position-layout a{
+  text-decoration: none;
+  color: #656363;
+}
+.position-layout li :hover{
+  color: #fff;
+  text-decoration: underline;
+
+}
+/* Optional: To handle responsiveness for smaller screens */
+@media (max-width: 1200px) {
+  .position-layout ul{
+    flex: 1 1 calc(33.33% - 10px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .position-layout ul {
+    flex: 1 1 calc(50% - 10px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .position-layout {
+    margin: 0px -3rem;
+    
+  }
+  .position-layout ul {
+    flex: 1 1 100%; /* One card per row */
+    justify-content: space-around;
+  }
+}

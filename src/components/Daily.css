@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+.first {
+  background-color: aqua;
+  width: 50%;
+  height: 50%;
+}
+.second {
+  background-color: rgb(81, 218, 60);
+  width: 50%;
+  height: 50%;
+}
