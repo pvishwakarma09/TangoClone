@@ -27,10 +27,12 @@ const Navbar = () => {
         </button>
 
         <div className="logo">
+        <Link to="/Mainsection">
           <img
             src="https://tango.me/images/31fe8a5fe128339779c5-brand-logo.svg"
             alt="logo"
           ></img>
+          </Link>
         </div>
       </div>
       <div className="search-bar">
