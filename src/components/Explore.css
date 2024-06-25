@@ -1,0 +1,21 @@
+.explore{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.explore ul {
+  display: flex;
+  gap: 30px;
+  margin: 13px 40px;
+  /* border-bottom: 2px solid rgba(45, 45, 44, 0.133); */
+}
+.new-one li {
+  list-style-type: none;
+}
+.new-one li:hover{
+  text-decoration: underline;
+}
+ul,a, li{
+  text-decoration: none;
+  color: #fff;
+}
