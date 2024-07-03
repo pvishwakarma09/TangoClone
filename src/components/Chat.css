@@ -1,43 +1,61 @@
-.chat-join span {
+.join {
+  margin-top: 130px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  height: 100vh; /* Set the height to the full viewport height */
+  justify-content: space-between; /* Distribute space between children */
+}
+
+.join span {
   color: white;
-  margin-left: 55px;
   font-family: Lato, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0;
+  line-height: 36px;
+  margin-bottom: 20px; /* Add margin below the span to create space */
 }
-.chat-join {
-  margin-top: 100px;
-}
+
 .ul-box {
-  margin: 25px 472px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to start from the same position */
+  padding: 32;
+  margin: auto 0; /* Center the ul-box vertically */
 }
 
 .li-box {
-  align-items: center;
   display: flex;
+  align-items: center;
   list-style: none;
   margin-bottom: 8px;
-  margin-left: 50px;
   color: white;
+  width: 100%; /* Ensure li-box takes the full width */
+  margin-top: 0; /* Remove negative margin top */
+  margin-bottom:-22px;
 }
+
+.li-box svg {
+  margin-right: 10px; /* Add some space between the icon and text */
+}
+
 .li-box span {
   font-size: 15px;
-  text-decoration: none;
   font-weight: normal;
   margin-left: 5px;
 }
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px; /* Add some space above the button */
 }
+
 .sign-btn {
   padding: 10px 100px;
-  margin-left: 50px;
   border-radius: 25px;
   border: none;
   font-weight: bolder;
@@ -45,44 +63,26 @@
   background: linear-gradient(
     to bottom,
     #fc3d6be6,
-    #f53260e6 51%,
+    #f53260e6 50%,
     #f7315fe6 75%
   );
   color: #fff;
 }
-.sign-btn:hover{
-  background: linear-gradient(
-    to bottom,
-    #fc3d6be6,
-    #fb4a73e6 51%,
-    #f73965e6 75%
-  );;
-}
+
 @media (max-width: 1200px) {
+  .sign-btn {
+    padding: 10px 80px;
+  }
 }
 
 @media (max-width: 900px) {
-  .chat-join span {
-    margin: 0px;
-  }
-  .ul-box {
-    margin: 10px;
-    padding: 20px;
-  }
   .sign-btn {
-    margin-right: 80px;
+    padding: 10px 60px;
   }
 }
 
 @media (max-width: 600px) {
-  .chat-join span {
-    margin-right: 90px;
-  }
-  .ul-box {
-    margin: 10px;
-    padding: 20px;
-  }
   .sign-btn {
-    margin-right: 60px;
+    padding: 10px 40px;
   }
 }
