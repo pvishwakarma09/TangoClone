@@ -1,13 +1,18 @@
-// src/Navbar.jsx
-import React from "react";
-import { Link } from "react-router-dom"; // in react use link-to and html use anchor tag.
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <button className="toggle-button">
+        <button className="toggle-button" onClick={toggleDropdown}>
           <span className="toggle-button hamberg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -18,20 +23,28 @@ const Navbar = () => {
             >
               <path
                 fill="currentColor"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M7.25 10A.75.75 0 0 1 8 9.25h16a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75m0 6a.75.75 0 0 1 .75-.75h16a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75M8 21.25a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </span>
         </button>
 
+        {showDropdown && (
+          <div className={`dropdown-menu ${showDropdown ? "show" : ""}`}>
+            <Link to="/profile">Profile</Link>
+            <Link to="/settings">Settings</Link>
+            <Link to="/logout">Logout</Link>
+          </div>
+        )}
+
         <div className="logo">
-        <Link to="/Mainsection">
-          <img
-            src="https://tango.me/images/31fe8a5fe128339779c5-brand-logo.svg"
-            alt="logo"
-          ></img>
+          <Link to="/Mainsection">
+            <img
+              src="https://tango.me/images/31fe8a5fe128339779c5-brand-logo.svg"
+              alt="logo"
+            ></img>
           </Link>
         </div>
       </div>

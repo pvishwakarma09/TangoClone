@@ -1,81 +1,88 @@
-.join span {
+.join {
+  margin-top: 130px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.join span {
   color: white;
-  margin-left: 55px;
   font-family: Lato, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0;
+  line-height: 36px;
+  margin-bottom: 20px; /* Add margin below the span to create space */
 }
-.join{
-    margin-top: 100px;
-}
+
 .ul-box {
-  margin: 25px 472px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to start from the same position */
+  padding: 0;
+  margin-bottom: 30px; /* Add margin below the ul to create space */
 }
 
 .li-box {
-  align-items: center;
   display: flex;
+  align-items: center;
   list-style: none;
   margin-bottom: 8px;
-  margin-left: 50px;
   color: white;
+  width: 100%; /* Ensure li-box takes the full width */
+  margin-top: -20px; /* Remove negative margin top */
 }
+
+.li-box svg {
+  margin-right: 10px; /* Add some space between the icon and text */
+}
+
 .li-box span {
   font-size: 15px;
-  text-decoration: none;
   font-weight: normal;
   margin-left: 5px;
 }
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .sign-btn {
   padding: 10px 100px;
-  margin-left: 50px;
   border-radius: 25px;
   border: none;
   font-weight: bolder;
   transition: all 0.3s ease-in-out;
+  margin-top: -50px;
   background: linear-gradient(
     to bottom,
     #fc3d6be6,
-    #f53260e6 51%,
+    #f53260e6 50%,
     #f7315fe6 75%
   );
   color: #fff;
 }
+
 @media (max-width: 1200px) {
-  
+  .sign-btn {
+    padding: 8px 80px;
+    margin-top: -50px;
+  }
 }
 
 @media (max-width: 900px) {
-    .join span{
-        margin: 0px;
-    }
-    .ul-box{
-    margin: 10px;
-    padding: 20px;
-  }
-  .sign-btn{
-    margin-right: 80px;
+  .sign-btn {
+    padding: 10px 60px;
+    margin-top: -50px;
   }
 }
 
 @media (max-width: 600px) {
-    .join span{
-        margin: 0px;
-    }
-    .ul-box{
-    margin: 10px;
-    padding: 20px;
-  }
-  .sign-btn{
-    margin-right: 60px;
+  .sign-btn {
+    padding: 10px 40px;
+    margin-top: -50px;
   }
 }

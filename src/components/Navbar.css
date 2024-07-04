@@ -1,4 +1,4 @@
-/* src/Navbar.css */
+/* Existing CSS */
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +32,36 @@ body {
 .toggle-button:hover {
   opacity: 0.8;
 }
+
+/* Navbar.css */
+
+.dropdown-menu {
+  display: none; /* Initially hide dropdown */
+  position: absolute;
+  top: 100%; /* Position below the toggle button */
+  left: 0;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column; /* Make dropdown items appear vertically */
+}
+
+.dropdown-menu.show {
+  display: flex; /* Show dropdown when show class is applied */
+}
+
+.dropdown-menu a {
+  text-decoration: none; /* Remove underline */
+  color: #fff;
+  margin-bottom: 10px; /* Add some spacing between the links */
+}
+
+.dropdown-menu a:hover {
+  opacity: 0.8;
+}
+
+/* Other styles */
 
 .logo {
   font-size: 24px;
@@ -114,8 +144,6 @@ body {
   border: 7px solid rgb(30, 30, 30);
   border-radius: 50%;
   background-color: rgb(210, 199, 199);
-  /* border: none; */
-  /* color: white; */
   font-size: 24px;
   width: 65px;
   height: 65px;
@@ -157,4 +185,56 @@ body {
 }
 .signin-button:hover{
   background-color:#f53260e6 ;
+}
+
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+  .navbar-left .toggle-button,
+  .navbar-left .logo,
+  .search-bar,
+  .navbar-center {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-right {
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0px 175px;
+  }
+
+  .mobile-navbar-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #131313;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+
+  .mobile-navbar-center a {
+    margin: 0 10px;
+  }
+
+  .feed-link {
+    display: block;
+  }
+  .circular-toggle{
+    margin-left:-109vw;
+    width: 50px;
+    height: 50px;
+  }
+  .signin-button{
+    margin-right: -165px;
+    height: 3.8vh;
+    width: 25vw;
+    font-size:12px;
+    padding:0px;
+  }
 }
