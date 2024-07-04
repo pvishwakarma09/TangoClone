@@ -38,12 +38,17 @@ body {
 .dropdown-menu {
   display: none; /* Initially hide dropdown */
   position: absolute;
-  top: 100%; /* Position below the toggle button */
-  left: 0;
+  /* top: 100%;  Position below the toggle button */
+  /* left: 0; */
+  /* margin-left: 5px; */
+  top: 88%;
+  font-weight: 500;
+  width: 22vw;
+  gap: 10px;
   background-color: #252525;
   color: #fff;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 18px;
   flex-direction: column; /* Make dropdown items appear vertically */
 }
 
@@ -183,10 +188,9 @@ body {
 .signin-button svg {
   margin-left: 10px;
 }
-.signin-button:hover{
-  background-color:#f53260e6 ;
+.signin-button:hover {
+  background-color: #f53260e6;
 }
-
 
 /* Media queries for mobile */
 @media (max-width: 768px) {
@@ -225,16 +229,16 @@ body {
   .feed-link {
     display: block;
   }
-  .circular-toggle{
-    margin-left:-109vw;
+  .circular-toggle {
+    margin-left: -109vw;
     width: 50px;
     height: 50px;
   }
-  .signin-button{
+  .signin-button {
     margin-right: -165px;
     height: 3.8vh;
     width: 25vw;
-    font-size:12px;
-    padding:0px;
+    font-size: 12px;
+    padding: 0px;
   }
 }

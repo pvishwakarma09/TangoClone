@@ -33,9 +33,13 @@ const Navbar = () => {
 
         {showDropdown && (
           <div className={`dropdown-menu ${showDropdown ? "show" : ""}`}>
-            <Link to="/profile">Profile</Link>
-            <Link to="/settings">Settings</Link>
-            <Link to="/logout">Logout</Link>
+            <Link to="/AboutUs">About Us</Link>
+            <Link to="/AffiliatesProgram">Tango's Affiliates Program</Link>
+            <Link to="/AgenciesProgram">Tango's Agencies Program</Link>
+            <Link to="/ResellersProgram">Tango's Resellers Program</Link>
+            <Link to="/LoyaltyProgram">Tango's Loyalty Program</Link>
+            <Link to="/ArtistCommunity">Artist Community</Link>
+            <Link to="/LegalInformation">Legal Information</Link>
           </div>
         )}
 
