@@ -38,9 +38,6 @@ body {
 .dropdown-menu {
   display: none; /* Initially hide dropdown */
   position: absolute;
-  /* top: 100%;  Position below the toggle button */
-  /* left: 0; */
-  /* margin-left: 5px; */
   top: 88%;
   font-weight: 500;
   width: 22vw;
@@ -160,8 +157,8 @@ body {
   cursor: pointer;
 }
 .circular-toggle img {
-  width: 55px;
-  height: 55px;
+  width: 48px;
+  height: 48px;
 }
 
 .signin-button {
