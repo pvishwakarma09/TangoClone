@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding:5px 20px;
   background-color: #131313;
   color: #fff;
 }
@@ -72,6 +72,7 @@ body {
 .logo img {
   width: 48px;
   height: 48px;
+  margin-left:-27px;
 }
 .logo:hover {
   transform: scale(1.2);
@@ -87,7 +88,7 @@ body {
   padding: 2px;
   border-radius: 25px;
   background-color: #252525;
-  color: #656363;
+  color:#7f7c7c;
 }
 
 .search-bar input {
@@ -96,7 +97,7 @@ body {
   padding: 5px;
   background-color: #252525;
   border-radius: 25px;
-  color: #fff;
+  color:#7f7c7c;
 }
 .search-bar input:hover {
   color: #fff;
@@ -107,6 +108,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+  gap:10px;
 }
 
 .navbar-center a {
@@ -168,8 +170,8 @@ body {
   background: linear-gradient(
     to bottom,
     #fc3d6be6,
-    #f53260e6 51%,
-    #f7315fe6 75%
+    #ec6181e5 51%,
+    #ef79e2e5 75%
   );
   color: #333;
   border: none;

@@ -19,6 +19,33 @@ const Position = () => {
             <Link to="/alltime">All Time</Link>
           </li>
         </ul>
+        <div className="containers">
+          <div className="left-container">
+            {[...Array(10)].map((_, index) => (
+              <div key={index} className="row">
+                <div className="avatar">
+                  <img src={"public/assets/catlogo.png"} alt="Avatar" />
+                </div>
+                <div className="info">
+                  <span className="name">Name</span>
+                  <span className="subscribers">1000</span>
+                  <span className="views">3000</span>
+                  <button className="follow-button">Follow</button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="right-container">
+            {[...Array(10)].map((_, index) => (
+              <div key={index} className="card-row">
+                <div className="card">Card 1</div>
+                <div className="card">Card 2</div>
+                <div className="card">Card 3</div>
+                <div className="card">Card 4</div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
