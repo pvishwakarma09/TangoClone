@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:5px 20px;
+  padding: 5px 20px;
   background-color: #131313;
   color: #fff;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 /* Navbar.css */
-
+/* left side drpdown css */
 .dropdown-menu {
   display: none; /* Initially hide dropdown */
   position: absolute;
@@ -63,7 +63,7 @@ body {
   opacity: 0.8;
 }
 
-/* Other styles */
+/* Other styles logo */
 
 .logo {
   font-size: 24px;
@@ -72,14 +72,14 @@ body {
 .logo img {
   width: 48px;
   height: 48px;
-  margin-left:-27px;
+  margin-left: -27px;
 }
 .logo:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-
+/* search bar */
 .search-bar {
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@ body {
   padding: 2px;
   border-radius: 25px;
   background-color: #252525;
-  color:#7f7c7c;
+  color: #7f7c7c;
 }
 
 .search-bar input {
@@ -97,18 +97,19 @@ body {
   padding: 5px;
   background-color: #252525;
   border-radius: 25px;
-  color:#7f7c7c;
+  color: #7f7c7c;
 }
 .search-bar input:hover {
   color: #fff;
 }
 
+/* forYou , Explore  , Chat  */
 .navbar-center {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  gap:10px;
+  gap: 10px;
 }
 
 .navbar-center a {
@@ -143,6 +144,7 @@ body {
   cursor: pointer;
 }
 
+/* Position css */
 .circular-toggle {
   background: none;
   border: 7px solid rgb(30, 30, 30);
@@ -161,6 +163,50 @@ body {
 .circular-toggle img {
   width: 48px;
   height: 48px;
+}
+.circular-toggle:hover {
+  opacity: 0.8;
+}
+
+/* Navbar.css */
+/* Right side login logo button css */
+.dropdown-menu1 {
+  display: none; /* Initially hide dropdown */
+  position: absolute;
+  top: 95%;
+  right: 11rem;
+  font-weight: 500;
+  width: 21vw;
+  gap: 11px;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  flex-direction: column; /* Make dropdown items appear vertically */
+  min-height: 53vh;
+}
+
+.dropdown-menu1.show {
+  display: flex; /* Show dropdown when show class is applied */
+  gap: 15px;
+}
+.shows svg {
+  margin-right: 10px;
+}
+.shows p {
+  margin-left: 40px;
+  color: rgb(210, 199, 199);
+  font-size: 12px;
+}
+
+.dropdown-menu1 a {
+  text-decoration: none; /* Remove underline */
+  color: #fff;
+  margin-bottom: 10px; /* Add some spacing between the links */
+}
+
+.dropdown-menu1 a:hover {
+  opacity: 0.8;
 }
 
 .signin-button {
@@ -189,6 +235,128 @@ body {
 }
 .signin-button:hover {
   background-color: #f53260e6;
+}
+/* End Right side login logo button css */
+
+/*  right side signUp button */
+.dropdown-menu2 {
+  display: none; /* Initially hide dropdown */
+  position: absolute;
+  top: 12%;
+  right: 25rem;
+  left: 25rem;
+  font-weight: 500;
+  width: 33vw;
+  gap: 11px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #131313;
+  border: 0.5px solid rgb(237, 221, 221);
+  padding: 18px;
+  flex-direction: column; /* Make dropdown items appear vertically */
+  min-height: 97vh;
+}
+
+.dropdown-menu2.show {
+  display: flex; /* Show dropdown when show class is applied */
+  gap: 15px;
+}
+.sign1{
+  margin-left: 42px;
+  margin-right: 42px;
+}
+.sign1 span {
+  font-family: Lato, sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  color: rgb(243, 237, 237);
+}
+/* Continue with google css */
+
+.sign2 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #252525;
+  background-color: white;
+  border-radius: 22px;
+  font-size: 15px;
+  gap: 20px;
+  padding: 22px;
+  font-weight: 600;
+  height: 20px;
+}
+.sign2 {
+  margin-top: 70px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/* continue with Apple css */
+.sign3 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid #252525;
+  border-radius: 22px;
+  font-size: 15px;
+  gap: 20px;
+  padding: 22px;
+  font-weight: 600;
+  height: 20px;
+}
+.sign3 {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.sign4 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid #252525;
+  border-radius: 22px;
+  font-size: 15px;
+  gap: 20px;
+  padding: 22px;
+  font-weight: 600;
+  height: 20px;
+}
+/* continue with phone css */
+.sign4 {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.para {
+  padding-top: 3.5rem;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.para p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.space {
+  background-color: #252525;
+  height: 2px;
+  margin-top: 40px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.space span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#323232 ;
+  font-weight: bold;
 }
 
 /* Media queries for mobile */
