@@ -45,7 +45,7 @@ body {
   background-color: #252525;
   color: #fff;
   border-radius: 8px;
-  padding: 18px;
+  padding: 25px;
   flex-direction: column; /* Make dropdown items appear vertically */
 }
 
@@ -261,7 +261,7 @@ body {
   display: flex; /* Show dropdown when show class is applied */
   gap: 15px;
 }
-.sign1{
+.sign1 {
   margin-left: 42px;
   margin-right: 42px;
 }
@@ -355,7 +355,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#323232 ;
+  color: #323232;
   font-weight: bold;
 }
 

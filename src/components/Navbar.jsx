@@ -45,14 +45,31 @@ const Navbar = () => {
         </button>
 
         {showDropdown && (
-          <div className={`dropdown-menu ${showDropdown ? "show" : ""}`}>
-            <Link to="/AboutUs">About Us</Link>
-            <Link to="/AffiliatesProgram">Tango's Affiliates Program</Link>
-            <Link to="/AgenciesProgram">Tango's Agencies Program</Link>
-            <Link to="/ResellersProgram">Tango's Resellers Program</Link>
-            <Link to="/LoyaltyProgram">Tango's Loyalty Program</Link>
-            <Link to="/ArtistCommunity">Artist Community</Link>
-            <Link to="/LegalInformation">Legal Information</Link>
+          <div
+            className={`dropdown-menu ${showDropdown ? "show" : ""}`}
+            onMouseLeave={toggleDropdown}
+          >
+            <Link to="/AboutUs" onClick={toggleDropdown}>
+              About Us
+            </Link>
+            <Link to="/AffiliatesProgram" onClick={toggleDropdown}>
+              Tango's Affiliates Program
+            </Link>
+            <Link to="/AgenciesProgram" onClick={toggleDropdown}>
+              Tango's Agencies Program
+            </Link>
+            <Link to="/ResellersProgram" onClick={toggleDropdown}>
+              Tango's Resellers Program
+            </Link>
+            <Link to="/LoyaltyProgram" onClick={toggleDropdown}>
+              Tango's Loyalty Program
+            </Link>
+            <Link to="/ArtistCommunity" onClick={toggleDropdown}>
+              Artist Community
+            </Link>
+            <Link to="/LegalInformation" onClick={toggleDropdown}>
+              Legal Information
+            </Link>
           </div>
         )}
 
@@ -180,7 +197,10 @@ const Navbar = () => {
           />
         </button>
         {showDropdown1 && (
-          <div className={`dropdown-menu1 ${showDropdown1 ? "show" : ""}`}>
+          <div
+            className={`dropdown-menu1 ${showDropdown1 ? "show" : ""}`}
+            onMouseLeave={toggleDropdown1}
+          >
             <div className="shows">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -343,8 +363,11 @@ const Navbar = () => {
           Sign In
         </button>
         {showDropdown2 && (
-          <div className={`dropdown-menu2 ${showDropdown2 ? "show" : ""}`}>
-            <section>
+          <div
+            className={`dropdown-menu2 ${showDropdown2 ? "show" : ""}`}
+            onMouseLeave={toggleDropdown2}
+          >
+            <section className="signin">
               <div className="sign1">
                 <span>Welcome To Tango!</span>
               </div>
