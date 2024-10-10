@@ -1,0 +1,75 @@
+h1 {
+  margin: 0 14.4rem 0px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.card-sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0px;
+  margin-left: 20px;
+  font-weight: bolder;
+  color: #fff;
+  font-family: Lato, sans-serif;
+}
+
+p,
+h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: small;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Increased gap between cards */
+  margin: 8px auto; /* Centered the main section */
+  width: 70%; /* Decreased the width of the main section */
+  scroll-snap-type: y mandatory;
+}
+
+.first-card {
+  flex: 1 1 calc(25% - 20px); /* Four cards per row */
+  box-sizing: border-box;
+  height: 50vh; /* Decreased card height */
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+  border-radius: 15px;
+  scroll-snap-align: start;
+}
+
+/* Optional: To handle responsiveness for smaller screens */
+@media (max-width: 1200px) {
+  .first-card {
+    flex: 1 1 calc(33.33% - 20px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .first-card {
+    flex: 1 1 calc(48% - 20px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .main-section {
+    margin: 8px 1rem; /* Adjusted margin for smaller screens */
+    gap: 16px; /* Increased gap between cards on mobile */
+    width: 90%; /* Decreased width of the main section on mobile */
+  }
+  h1 {
+    margin: 1rem 2.5rem 0px;
+    margin-bottom: 10px;
+  }
+  .first-card {
+    flex: 1 1 calc(100% - 16px); /* One card per row on mobile */
+  }
+}

@@ -5,14 +5,14 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar.jsx";
 import "./App.css";
-import Card from "./components/Card";
-import Following from "./components/Following";
-import Chat from "./components/Chat";
-import Position from "./components/Position";
-import Explore from "./components/Explore";
-import Card2 from "./components/Card2";
+import Card from "./components/Card/Card.jsx";
+import Following from "./components/Following/Following.jsx";
+import Chat from "./components/Chat/Chat.jsx";
+import Position from "./components/Position/Position.jsx";  
+import Explore from "./components/Explore/Explore.jsx";
+import Card2 from "./components/Card2/Card2.jsx";
 
 const MainContent = () => {
   const location = useLocation();
@@ -25,28 +25,19 @@ const MainContent = () => {
   if (location.pathname === "/chat") {
     return <Chat />; // chat component
   }
-  if (location.pathname === "/explore") {
-    return <Explore />; // chat component
-  }
 
   if (location.pathname === "/explore") {
-    return <Explore />; // chat component
-  }
-  if (location.pathname === "/Newest") {
-    return <Card2 />; // chat component
-  }
-  if (location.pathname === "/Artist") {
-    return <Card2 />; // chat component
-  }
-  if (location.pathname === "/Nearby") {
-    return <Card2 />; // chat component
+    return <Explore />; // explore component
   }
 
-  if (location.pathname === "/Popular") {
-    return <Card2 />; // chat component
-  }
-  if (location.pathname === "/Audio") {
-    return <Card2 />; // chat component
+  if (
+    location.pathname === "/Newest" ||
+    location.pathname === "/Artist" ||
+    location.pathname === "/Nearby" ||
+    location.pathname === "/Popular" ||
+    location.pathname === "/Audio"
+  ) {
+    return <Card2 />; // render Card2 for all these routes
   }
 
   // Render Position component exclusively for the /newpage route
@@ -54,6 +45,7 @@ const MainContent = () => {
     return null; // MainContent does not render anything for /newpage
   }
 
+  // Default rendering for other paths
   return (
     <>
       <Routes>

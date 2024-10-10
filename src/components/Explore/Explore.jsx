@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Card } from "react-bootstrap";
-import Card2 from "./Card2";
 import "./Explore.css";
 
 const Explore = () => {

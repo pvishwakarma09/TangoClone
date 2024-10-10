@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
-import "./Position.css";
 import { Link } from "react-router-dom";
+import "./Position.css";
 
 const Position = () => {
   return (

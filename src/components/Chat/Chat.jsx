@@ -1,6 +1,5 @@
 import React from "react";
-import "./Following.css";
-
+import "./Chat.css"
 const Following = () => {
   return (
     <div className="join">
