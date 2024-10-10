@@ -5,7 +5,7 @@ import "./Card.css";
 const MainSection = () => {
   const videos = []; // empty array
   // Generate 100 more video objects
-  for (let i = 1; i <= 200; i++) {
+  for (let i = 1; i <= 52; i++) {
     videos.push({
       id: i,
       title: `Video ${i}`,
